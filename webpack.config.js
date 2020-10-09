@@ -1,24 +1,23 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: { main: './src/index' },
+  entry: { main: "./src/index" },
 
-  output: { publicPath: 'http://localhost:3000/' },
+  output: { publicPath: "http://localhost:3000/" },
   devServer: { port: 3000 },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
 
-  resolve: { extensions: ['.ts', '.js', '.tsx'] },
+  resolve: { extensions: [".ts", ".js", ".tsx"] },
 
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
     ],
   },
 
-  plugins: [new HtmlWebPackPlugin({ title: 'Untitled' })],
+  plugins: [new HtmlWebPackPlugin({ title: "Sample" })],
 };
