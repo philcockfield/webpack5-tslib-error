@@ -2,6 +2,8 @@
 
 There seems to be an error loading projects that use `tslib` using `webpack@5.0.0-rc.3`.
 
+See [Webpack Issue #11613](https://github.com/webpack/webpack/issues/11613)
+
 ## Setup
 
 ```
